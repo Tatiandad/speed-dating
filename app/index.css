@@ -1,0 +1,215 @@
+body {
+  background-color: #f1f3f7;
+  font-family: -apple-sytem,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-size: 16px;
+  color: #424b60;
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  line-height: 3rem;
+  font-size: 1rem;
+  background: #ffffff;
+  border: none;
+  color: #424b60;
+  width: 10rem;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 70%;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #424b60;
+  flex: 0 0 25rem;
+  margin-left: 10px;
+}
+
+textarea {
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #424b60;
+  flex: 0 0 25rem;
+  margin-left: 10px;
+}
+
+select {
+  height: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #424b60;
+  flex: 0 0 25rem;
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+
+.welcome-container {
+  & button {
+    margin: 5rem 1rem;
+  }
+}
+
+.register-form {
+  margin: 2rem auto;
+  width: 60%;
+
+  & button {
+    margin: 0 1rem;
+  }
+}
+
+.register-form-controls {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.passive {
+  opacity: 0.3;
+}
+
+.register-hobbies-container {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+}
+
+.register-hobbies-hobbie {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  min-width: 5rem;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  margin: 0.25rem;
+
+  & button {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 13px;
+    align-self: flex-end;
+    margin-right: 0;
+  }
+}
+
+.profiles-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  & input {
+    align-self: center;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    flex: unset;
+  }
+}
+
+.profiles-selected-container {
+  position: fixed;
+  top: 5rem;
+  right: 10rem;
+
+  & img {
+    width: 50px;
+  }
+
+  & figcaption {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 30px;
+    text-align: left;
+    width: 10rem;
+  }
+
+  & h5 {
+    text-align: left;
+    text-indent: 30px;
+  }
+}
+
+.register-form-error-message {
+  color: #e91e63;
+}
+
+/* style and animation for the header */
+
+.app-header {
+  height: 60px;  
+  overflow: hidden;
+  position: relative;
+
+  & h3 {
+    font-size: 3em;
+    color: #e91e63;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 1rem 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);    
+    transform:translateX(100%);  
+    -moz-animation: demo-1 15s linear infinite;
+    -webkit-animation: demo-1 15s linear infinite;
+    animation: demo-1 15s linear infinite;
+  }
+}
+
+@-moz-keyframes demo-1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes demo-1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes demo-1 {
+  0% { 
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);       
+  }
+
+  100% { 
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+  }
+}
+
+
+
+
